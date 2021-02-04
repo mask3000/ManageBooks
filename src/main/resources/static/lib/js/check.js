@@ -32,16 +32,16 @@ $('#add').find('input').eq(0).change(function () {
 });
 //bname
 $('#add').find('input').eq(1).change(function () {
-    if ($(this).val().length < 3) {
-        fail($(this), 1, '书名太短，不能少于3个字符', checkadd, 0);
+    if ($(this).val().length < 1) {
+        fail($(this), 1, '书名太短，不能少于1个字符', checkadd, 0);
     } else {
         success($(this), 1, checkadd, 0);
     }
 });
 //publisher
 $('#add').find('input').eq(2).change(function () {
-    if ($(this).val().length < 3) {
-        fail($(this), 2, '出版社名太短，不能少于3个字符', checkadd, 0);
+    if ($(this).val().length < 1) {
+        fail($(this), 2, '出版社名太短，不能少于1个字符', checkadd, 0);
     } else {
         success($(this), 2, checkadd, 0);
     }

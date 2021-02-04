@@ -84,3 +84,6 @@
 │   │           ├── user_borrow.html
 │   │           └── user_reservation.html
 ```
+
+idea打开需要添加resources目录为classpath才能debug运行 file->project structure,左侧modules右侧点击dependence,然后点击右边的+号
+idea需要安装lombok插件，才能消除红色错误提示

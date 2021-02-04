@@ -2,12 +2,6 @@ package cn.lightina.managebooks.enumeration;
 
 import lombok.Getter;
 
-/**
- * @Author jacklightChen
- * @Email 1797079433@qq.com
- * @createTime 2019/4/8
- * @proverb please find the joy in your life
- **/
 @Getter
 public enum ExceptionEnum {
     ADD_FAILURE(10001,"添加失败"),

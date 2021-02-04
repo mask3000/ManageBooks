@@ -10,12 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/managebooks")
-public class emailController {
+public class EmailController {
     @Autowired
     MailService mailService;
 
-    @RequestMapping(value = "/{validation}/email",
-            method = RequestMethod.GET)
+    @RequestMapping(value = "/{validation}/email", method = RequestMethod.GET)
     public ProcessResult remindReturn(@PathVariable(value = "validation")String val){
         ProcessResult pr=null;
         if(val==null)return new ProcessResult(false);
@@ -23,7 +22,7 @@ public class emailController {
         if(val.equals("czctalent")) {
             // 提醒还书
             mailService.processReturnReminder();
-        }else if(val.equals("czhtalent")){
+        }else {
             // 提醒预约
             mailService.processResReminder();
         }

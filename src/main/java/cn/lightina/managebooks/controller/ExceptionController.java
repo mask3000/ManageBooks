@@ -9,12 +9,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @Author jacklightChen
- * @Email 1797079433@qq.com
- * @createTime 2019/4/8
- * @proverb please find the joy in your life
- **/
 @RestControllerAdvice
 public class ExceptionController {
     // 捕捉自定义Exception

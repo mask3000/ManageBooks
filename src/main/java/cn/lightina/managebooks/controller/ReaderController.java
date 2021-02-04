@@ -67,8 +67,7 @@ public class ReaderController {
     }
 
     @GetMapping(value = "/reservation")
-    public String listResListById(Model model,
-                                  HttpServletRequest request) {
+    public String listResListById(Model model, HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("user");
         model.addAttribute("user", user);
         List<ReservationDetail> list = bookService.getResById(user);
@@ -77,8 +76,7 @@ public class ReaderController {
     }
 
     @GetMapping(value = "/borrow")
-    public String listBorListById(Model model,
-                                  HttpServletRequest request) {
+    public String listBorListById(Model model, HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("user");
         model.addAttribute("user", user);
         List<BorrowDetail> list = bookService.getBorInfo(user);
@@ -110,8 +108,7 @@ public class ReaderController {
     }
 
     // 添加图书
-    @RequestMapping(value = "/admin/books",
-            method = RequestMethod.POST,
+    @RequestMapping(value = "/admin/books", method = RequestMethod.POST,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public ProcessResult addbook(HttpServletRequest request,
@@ -135,8 +132,7 @@ public class ReaderController {
         return "admin_processreservation";
     }
 
-    @GetMapping(
-            value = "/admin/{reservationId}/borrow")
+    @GetMapping(value = "/admin/{reservationId}/borrow")
     public String addBorrow(
             Model model,
             HttpServletRequest request,
@@ -150,8 +146,7 @@ public class ReaderController {
     }
 
     // 查看借阅情况
-    @GetMapping(
-            value = "/admin/borrow")
+    @GetMapping(value = "/admin/borrow")
     public String showBorrow(
             Model model,
             HttpServletRequest request) {
@@ -163,13 +158,9 @@ public class ReaderController {
     }
 
     // 查看借阅情况
-    @GetMapping(
-            value = "/admin/delete")
+    @GetMapping(value = "/admin/delete")
     @ResponseBody
-    public ProcessResult delBookList(
-            Model model,
-            HttpServletRequest request,
-            @RequestBody BookList bookList) {
+    public ProcessResult delBookList(Model model, HttpServletRequest request, @RequestBody BookList bookList) {
         User user = (User) request.getSession().getAttribute("user");
         ProcessResult pr;
         try{

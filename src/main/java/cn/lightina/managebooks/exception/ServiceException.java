@@ -2,13 +2,8 @@ package cn.lightina.managebooks.exception;
 
 import cn.lightina.managebooks.enumeration.ExceptionEnum;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-/**
- * @Author jacklightChen
- * @Email 1797079433@qq.com
- * @createTime 2019/4/8
- * @proverb please find the joy in your life
- **/
 @Data
 public class ServiceException extends RuntimeException {
     private Integer code;
