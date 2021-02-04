@@ -1,15 +1,6 @@
 # ManageBooks
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
 ### 简介
-**项目年久失修 仅供参考 ゜▽゜)ノ**  
-一个基于SpringBoot+Thymeleaf渲染的图书管理系统<br>
-功能: <br>
-用户: a.预约图书 b.查看预约记录 c.还书<br>
-管理员: a.添加图书 b.处理预约(借书) c.查看借阅记录<br>
-另:<br>
-1.当用户过了还书日期仍旧未还书时会发邮件通知<br>
-2.当有书被还时发邮件通知预约书的用户到图书馆进行借书<br>
-
 ### 使用技术
 后端 | ... 
 :---:|:---
@@ -93,18 +84,3 @@
 │   │           ├── user_borrow.html
 │   │           └── user_reservation.html
 ```
-
-主界面:
-![主界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro1.png)
-用户界面:
-![预约界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro2.png)
-![预约记录界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro3.png)
-![还书界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro7.png)
-管理员界面:
-![添加界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro4.png)
-![处理界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro5.png)
-![借阅界面](https://github.com/jacklightChen/managebooks/blob/master/src/main/resources/static/lib/images/managebooks_intro6.png)
-
-### WARNING
-
-![](./CONTENT.JPG)
