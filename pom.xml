@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.lightina</groupId>
-    <artifactId>springbootdemo</artifactId>
+    <groupId>mask3000</groupId>
+    <artifactId>managebooks</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>springbootdemo</name>
-    <description>Demo project for Spring Boot</description>
+    <name>managebooks</name>
+    <description>Mini project for Spring Boot</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

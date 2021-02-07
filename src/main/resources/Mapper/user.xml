@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="cn.lightina.managebooks.dao.UserMapper">
+<mapper namespace="mask3000.booksmanagement.dao.UserMapper">
     <select id="checkUser" resultType="User">
         select * from reader where user_name=#{user.userName} and pass_wd=#{user.passWd}
     </select>

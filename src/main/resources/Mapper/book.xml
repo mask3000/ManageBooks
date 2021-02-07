@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="cn.lightina.managebooks.dao.BookMapper">
+<mapper namespace="mask3000.booksmanagement.dao.BookMapper">
 
     <select id="getList" resultType="BookList">
         select * from booklist
@@ -37,11 +35,6 @@
     <select id="getBorById" resultType="BorrowDetail" parameterType="User">
         select borrow_id, bname, btime, deadline, rtime from borrow_detail where user_id=#{user.userId}
     </select>
-
-
-    <!--<select id="getListById" resultType="Book" parameterType="User">-->
-
-    <!--</select>-->
 
     <insert id="addBookList">
         call library.new_book(#{booklist.isbn}, #{booklist.bname}, #{booklist.publisher}, #{booklist.writer},

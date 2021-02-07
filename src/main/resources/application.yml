@@ -24,7 +24,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:Mapper/*.xml
-  type-aliases-package: cn.lightina.managebooks.pojo
+  type-aliases-package: mask3000.booksmanagement.pojo
   configuration:
     map-underscore-to-camel-case: true
 
